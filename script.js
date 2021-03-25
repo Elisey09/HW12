@@ -28,6 +28,11 @@ const students = [
   },
 ];
 
+
+
+TODO://не получается почему-то
+// function getAvgMark(marks) {
+//     return marks.reduce((total, amount) => (total + amount)) / marks.length;
 function getAvgMark() {
   let sum = 0;
   for (let i = 0; i < this.marks.length; i++) {
@@ -35,11 +40,7 @@ function getAvgMark() {
   }
   let result = sum / this.marks.length;
   return result;
-}
-
-TODO://не получается почему-то
-// function getAvgMark(marks) {
-//     return marks.reduce((total, amount) => (total + amount)) / marks.length;
+};
 
  students.map((e) => {
   console.log(`${e.name} Средняя оценка:  ${e.avgMark()}`);
@@ -49,7 +50,7 @@ console.log("____________________________________________________");
 function getMaxMark() {
   let result = Math.max(...this.marks);
   return result;
-}
+};
 
 students.map((e) => {
   console.log(`${e.name} Максимальная оценка: ${e.maxMark()}`);
@@ -76,7 +77,8 @@ function getInfo() {
 }
 
 console.log("____________________________________________________");
-
 students.map((e) => {
   console.log(e.info());
 });
+//ffsdfsf
+//dsfs
